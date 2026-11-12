@@ -6,11 +6,11 @@ A Nonlinear Dynamics and Control project on a two-state bistable model with comp
 
 ![Open-loop trajectories from seven initial conditions, showing convergence toward the two stable branches and the symmetric saddle](assets/open-loop-evolution.png)
 
-## Project contribution
+## Approach
 
-- Computed and classified equilibria using the Jacobian, checked local stability with quadratic Lyapunov functions, and simulated free evolution from multiple initial conditions.
-- Compared PI, input-output feedback linearization, and sliding mode control in Simulink, together with tabular Q-learning and deep Q-networks in MATLAB.
-- Evaluated regulation around the unstable equilibrium. The report compares tracking error, control effort, and response to disturbances across the simulated cases.
+- The open-loop analysis computes equilibria, classifies them using the Jacobian, checks local stability with quadratic Lyapunov functions, and simulates free evolution from multiple initial conditions.
+- The comparison covers PI, input-output feedback linearization, and sliding mode control in Simulink, together with tabular Q-learning and deep Q-networks in MATLAB.
+- The evaluation focuses on regulation around the unstable equilibrium. The report compares tracking error, control effort, and response to disturbances across the simulated cases.
 
 ## Results
 
@@ -20,7 +20,7 @@ The open-loop script finds **two stable nodes and one saddle** for the balanced 
 
 Tested with MATLAB R2026a. The equilibrium and Lyapunov scripts use Optimization Toolbox and Control System Toolbox, respectively. The three classical controllers use Simulink. The DQN scripts use Reinforcement Learning Toolbox and Deep Learning Toolbox.
 
-Run the command for the analysis or controller you want from the repository root.
+Run the corresponding analysis or controller command from the repository root.
 
 ```matlab
 run('Open-loop analysis/equilibria.m')
@@ -41,6 +41,6 @@ The analysis and Simulink scripts print results or export PDF plots. Tabular Q-l
 
 ## Verification
 
-- Ran the open-loop scripts and all three Simulink controllers using their saved configurations.
-- Completed the 6,000-episode tabular run and checked all six checkpoints and the saved Q-table. The run reported 14% success over its final 100 training episodes. Tested training and rollout for both DQN variants with two short episodes each.
+- Verification covered the open-loop scripts and all three Simulink controllers using their saved configurations.
+- The 6,000-episode tabular run was completed, with verification of all six checkpoints and the saved Q-table. The run reported 14% success over its final 100 training episodes. A short test checked training and rollout for each DQN variant using two episodes.
 - The archived disturbance DQN script uses a 1,500-episode limit. The learning curve in the report extends to 3,000 episodes. The MATCONT continuation plots are provided in the report. Reproducing those plots requires rebuilding the continuation setup.
