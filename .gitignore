@@ -1,0 +1,11 @@
+slprj/
+*.slxc
+*.asv
+/Open-loop analysis/fig_lyap/
+/Open-loop analysis/figures_free/
+/Controller/PI_controller/*_evolution.pdf
+/Controller/IO_FBL/plots_pdf/
+/Controller/IO_FBL/Internal_Dynamics.pdf
+/Controller/SMC/plots_pdf/
+/Controller/Tabular_Q_learning/outputs/
+/Controller/Deep_Q_network/savedAgents/
