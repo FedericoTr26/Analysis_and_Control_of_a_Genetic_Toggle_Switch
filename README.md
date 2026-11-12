@@ -1,4 +1,4 @@
-# NLDC_Analysis-and-Control-of-a-Genetic-Toggle-Switch-
+# Analysis_and_Control_of_a_Genetic_Toggle_Switch
 
 This repository contains the project developed for the **Nonlinear Dynamics and Control** course.  
 The work focuses on the modeling, analysis, and control of a **genetic toggle switch**, a bistable system in synthetic biology, with particular attention to nonlinear behavior and resource competition effects.
